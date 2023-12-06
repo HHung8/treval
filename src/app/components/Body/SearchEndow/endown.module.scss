@@ -1,0 +1,547 @@
+// scss book
+.book {
+  padding: 2rem 9%;
+  .heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    > span {
+      font-size: 2.8rem;
+      background: rgba(255, 165, 0, 0.2);
+      color: #ffa500;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+      margin: 0 4px;
+    }
+    > .space {
+      background: none;
+    }
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    .image {
+      flex: 1 1 40rem;
+    }
+    form {
+      flex: 1 1 40rem;
+      padding: 1rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      border-radius: 0.5rem;
+      .inputBox {
+        padding: 0.5rem 0;
+        > h3 {
+          font-size: 1.2rem;
+          padding: 0.5rem 0;
+          color: #666;
+        }
+        > input {
+          width: 100%;
+          padding: 0.8rem;
+          border: 1px solid orange;
+          font-size: 0.9rem;
+          color: #333;
+          background: transparent;
+          text-transform: none;
+          border-radius: 4px;
+          outline: none;
+        }
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: #ffa500;
+        color: #fefefe;
+        padding: 0.6rem 2rem;
+        border: 0.2rem solid var(--orange);
+        cursor: pointer;
+        font-size: 1.4rem;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+// end book
+
+// scss packgaes
+.packages {
+  padding: 2rem 9%;
+  .headingForYou {
+    text-align: center;
+    padding: 2.5rem 0;
+
+    > span {
+      font-size: 2.6rem;
+      background: rgba(255, 165, 0, 0.2);
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+      color: #ffa500;
+      margin: 0 4px;
+    }
+    .spaceForYour {
+      background: none;
+    }
+  }
+  .boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .boxForYou {
+      flex: 1 1 30rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      .contentForYou {
+        padding: 2rem;
+        .address {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          > span {
+            color: #ffa500;
+          }
+        }
+        .countryContent {
+          font-size: 1rem;
+          color: #666;
+          padding: 1rem 0;
+        }
+        .starts {
+          color: #ffa500;
+        }
+        .btnForYou {
+          display: inline-block;
+          margin-top: 1rem;
+          background-color: #ffa500;
+          color: #fefefe;
+          padding: 0.8rem 3rem;
+          border: 0.2rem solid var(--orange);
+          cursor: pointer;
+          font-size: 1.4rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+// end packages
+
+// scss endow
+.endow {
+  padding: 2rem 9%;
+  .heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    > span {
+      font-size: 2.6rem;
+      background: rgba(255, 165, 0, 0.2);
+      color: #ffa500;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+      margin: 0 4px;
+    }
+    .space {
+      background: none;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .box {
+      flex: 1 1 19rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+    .content {
+      padding: 2rem;
+      .contentTitle {
+        display: flex;
+        align-items: center;
+        > .icon {
+          color: #ffa500;
+          margin-right: 4px;
+        }
+      }
+      p {
+        color: #666;
+        padding: 1rem 0;
+      }
+      .starts {
+        color: #ffa500;
+      }
+      .prices {
+        font-size: 2rem;
+        color: #333;
+        padding-top: 1rem;
+        > span {
+          color: #666;
+          font-size: 1.5rem;
+          text-decoration: line-through;
+        }
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: #ffa500;
+        color: #fefefe;
+        padding: 0.8rem 3rem;
+        border: 0.2rem solid var(--orange);
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+// end scss endow
+
+// scss servers
+.services {
+  padding: 2rem 9%;
+  .heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    > span {
+      font-size: 2.6rem;
+      background: rgba(255, 165, 0, 0.2);
+      color: #ffa500;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+      margin: 0 4px;
+    }
+    .spaces {
+      background: none;
+    }
+  }
+  .boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .box {
+      flex: 1 1 20rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      text-align: center;
+      .icons {
+        padding: 1rem;
+        font-size: 2rem;
+        color: #ffa500;
+      }
+      &:hover {
+        box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+}
+// End SCSS SERVER
+
+// scss gallery
+.gallery {
+  padding: 2rem 9%;
+  .heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    > span {
+      font-size: 2.6rem;
+      background: rgba(255, 165, 0, 0.2);
+      color: #ffa500;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+      margin: 0 4px;
+    }
+    .space {
+      background: none;
+    }
+  }
+  .boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .box {
+      overflow: hidden;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border: 1rem solid #fefefe;
+      border-radius: 0.5rem;
+      flex: 1 1 20rem;
+      height: 19rem;
+      position: relative;
+      .content {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 2rem;
+        padding-top: 5rem;
+        transition: all 0.2s linear;
+        > h3 {
+          color: #ffa500;
+        }
+        > p {
+          color: #fefefe;
+          font-size: 14px;
+          padding: 1rem 0;
+        }
+        > a {
+          padding: 0.5rem;
+          background: #ffa500;
+          color: #fefefe;
+          cursor: pointer;
+          border-radius: 4px;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid #ffa500;
+          }
+        }
+      }
+      &:hover .content {
+        top: 0;
+      }
+    }
+  }
+}
+// End scss gallery
+
+// scss review
+.review {
+  padding: 2rem 9%;
+  .heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    > span {
+      font-size: 2.6rem;
+      background: rgba(255, 165, 0, 0.2);
+      color: #ffa500;
+      margin: 0 4px;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+    }
+    .space {
+      background: none;
+    }
+  }
+  .rate {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0rem 2rem rgb(0 0 0 / 5%);
+    .row {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      align-items: flex-start;
+      .ratestar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7.5em;
+        > h2 {
+          color: #ffa500;
+        }
+        .skills {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s;
+          .rating {
+            position: relative;
+            display: flex;
+            margin: 10px 0;
+            flex-direction: row-reverse;
+            > .icon {
+              color: #ffa500;
+            }
+          }
+        }
+      }
+    }
+    form {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1 1 40rem;
+      padding: 1rem;
+      box-shadow: 0 0rem 2rem rgb(0 0 0 / 3%);
+      border-radius: 0.5rem;
+      .inputBox {
+        padding: 0.5rem 0;
+        display: flex;
+        > textarea {
+          color: #333;
+          background: #fefefe;
+          border: 0.1rem solid #ffa500;
+        }
+      }
+      .btn {
+        background: #ffa500;
+        color: #fefefe;
+        padding: 0.3rem 0rem;
+        border: 0.2rem solid #ffa500;
+        cursor: pointer;
+        font-size: 1rem;
+        width: 17.3%;
+        display: flex;
+        border-radius: 6px;
+        justify-content: center;
+      }
+    }
+  }
+  .profile {
+    margin-top: 10px;
+    .profileDetails {
+      display: flex;
+      .profileContent {
+        box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+        width: 574px;
+        height: 316px;
+        margin: 0 10px;
+        border-radius: 6px;
+        animation: slideLeftAnimation 15s infinite; /* Adjust the duration as needed */
+        opacity: 0;
+        transform: translateX(-100%);
+        .box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0;
+          > h3 {
+            color: #333;
+          }
+          > p {
+            padding: 1rem 0;
+            color: #666;
+          }
+          .starts {
+            > .icons {
+              color: #ffa500;
+            }
+          }
+        }
+      }
+      .profileContent:nth-child(0) {
+        animation-delay: 2s;
+      }
+      .profileContent:nth-child(1) {
+        animation-delay: 4s;
+      }
+      .profileContent:nth-child(2) {
+        animation-delay: 6s;
+      }
+      .profileContent:nth-child(3) {
+        animation-delay: 8s;
+      }
+      .profileContent:nth-child(4) {
+        animation-delay: 10s;
+      }
+      .profileContent:nth-child(5) {
+        animation-delay: 12s;
+      }
+      .profileContent:nth-child(6) {
+        animation-delay: 14s;
+      }
+    }
+  }
+}
+
+@keyframes slideLeftAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// End scss review
+
+.contact {
+  padding: 2rem 9%;
+  .heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    > span {
+      font-size: 2.6rem;
+      background: rgba(255, 165, 0, 0.2);
+      color: #ffa500;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1rem;
+      margin: 0 4px;
+    }
+    .spaces {
+      background: none;
+    }
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    .image {
+      flex: 1 1 20rem;
+    }
+    .actions {
+      flex: 1 1 50rem;
+      padding: 2rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      > .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > input {
+          width: 49%;
+          margin: 1rem 0;
+          padding: 1rem;
+          font-size: 1.7rem;
+          color: #333;
+          background: #f7f7f7;
+          text-transform: none;
+        }
+      }
+      textarea {
+        height: 15rem;
+        resize: none;
+        width: 100%;  
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: #ffa500;
+        color: #fefefe;
+        padding: 0.8rem 3rem;
+        border: 0.2rem solid var(--orange);
+        cursor: pointer;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

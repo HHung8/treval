@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.75);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 9%;
+  .title {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fefefe;
+    text-transform: uppercase;
+    > span {
+      color: #ffa500;
+    }
+  }
+  .navbar {
+    transition: all 0.2s linear;
+    > a {
+      text-decoration: none;
+      color: #fefefe;
+      margin: 0 10px;
+      &:hover {
+        color: #ffa500;
+      }
+    }
+  }
+  .icon {
+    width: 109px;
+    height: 40x;
+    height: 40px;
+    font-size: 1.4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    .iconCenter {
+      margin: 0 10px;
+    }
+  }
+  form {
+    position: absolute;
+    width: 100%;
+    top: 61px;
+    cursor: pointer;
+    input {
+      width: 95%;
+      height: 40px;
+      margin: 0 -102px;
+      background: rgba(0, 0, 0, 0.6);
+      outline: none;
+      border: 1px solid black;
+      border-radius: 8px;
+      display: none;
+      color: #fff;
+      padding: 10px;
+    }
+
+    input.visible {
+      display: inline-block; // Show the input when the 'visible' class is applied
+    }
+  }
+}
+
+
+// SCSS video 
+.video {
+  position: relative; 
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 26px;
+  color: #fff;
+  text-align: center; 
+  padding: 10px 0;
+    .text {
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #ffa500;
+      padding: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+}
