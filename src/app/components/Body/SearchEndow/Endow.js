@@ -1,4 +1,3 @@
-// "use client";
 import Image from "next/image";
 import styles from "./endown.module.scss";
 import Link from "next/link";
@@ -18,6 +17,20 @@ import {
 const Endow = () => {
   return (
     <>
+      <video
+        width="100%"
+        height="100%"
+        controls={false}
+        autoPlay
+        loop
+        muted
+        className={styles.video}
+      >
+        <source
+          src="https://code-fullstack-exercise49.vercel.app/videos/vid-2.mp4"
+          type="video/mp4"
+        />
+      </video>
       <section className={styles.book}>
         <h1 className={styles.heading}>
           <span>T</span>
@@ -110,9 +123,9 @@ const Endow = () => {
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStarHalf} />
               </div>
-              <a href="hawaii/index.html" className={styles.btnForYou}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btnForYou}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -151,9 +164,9 @@ const Endow = () => {
               <div className={styles.prices}>
                 30.000.000 <span>52.845.245</span>
               </div>
-              <a href="mumbai/index.html" className={styles.btn}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btn}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
           <div className={styles.box}>
@@ -180,9 +193,9 @@ const Endow = () => {
               <div className={styles.prices}>
                 30.000.000 <span>52.845.245</span>
               </div>
-              <a href="mumbai/index.html" className={styles.btn}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btn}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
           <div className={styles.box}>
@@ -209,9 +222,9 @@ const Endow = () => {
               <div className={styles.prices}>
                 30.000.000 <span>52.845.245</span>
               </div>
-              <a href="mumbai/index.html" className={styles.btn}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btn}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
           <div className={styles.box}>
@@ -238,9 +251,9 @@ const Endow = () => {
               <div className={styles.prices}>
                 30.000.000 <span>52.845.245</span>
               </div>
-              <a href="mumbai/index.html" className={styles.btn}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btn}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
           <div className={styles.box}>
@@ -267,9 +280,9 @@ const Endow = () => {
               <div className={styles.prices}>
                 30.000.000 <span>52.845.245</span>
               </div>
-              <a href="mumbai/index.html" className={styles.btn}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btn}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
           <div className={styles.box}>
@@ -296,9 +309,9 @@ const Endow = () => {
               <div className={styles.prices}>
                 30.000.000 <span>52.845.245</span>
               </div>
-              <a href="mumbai/index.html" className={styles.btn}>
-                Đặt ngay
-              </a>
+              <Link href="/order">
+                <span className={styles.btn}>Đặt ngay</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -2,12 +2,12 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./header.module.scss";
+import Link from "next/link";
 import {
   faMoon,
   faSun,
   faSearch,
   faUser,
-  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
@@ -28,9 +28,12 @@ const Header = () => {
   return (
     <div>
       <header className={styles.header}>
-        <a className={styles.title}>
-          <span>S</span> Travel
-        </a>
+        <Link href="/">
+          <span className={styles.title}>
+            <span>S</span> Travel
+          </span>
+        </Link>
+
         <nav className={styles.navbar}>
           <a href="#home">Trang Chủ</a>
           <a href="#book">Đặt Lịch</a>
@@ -63,28 +66,6 @@ const Header = () => {
           />
         </form>
       </header>
-      <video
-        width="100%"
-        height="100%"
-        controls={false}
-        autoPlay
-        loop
-        muted
-        className={styles.video}
-      >
-        <source
-          src="https://code-fullstack-exercise49.vercel.app/videos/vid-2.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div className={styles.content}>
-        <h3>Mọi chuyến đi đều đáng giá</h3>
-        <p>Khám phá các vùng đất mới cùng chúng tôi</p>
-        <p className={styles.text}>Những chuyến đi đang chờ đợi bạn</p>
-        <a href="#packages" className={styles.btn}>
-          Khám phá ngay
-        </a>
-      </div>
     </div>
   );
 };

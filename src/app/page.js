@@ -1,4 +1,5 @@
 import Content from "./components/Body/fileContent/Content";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import "@/assets/resetcss/global.scss";
 const Page = () => {
@@ -6,6 +7,7 @@ const Page = () => {
     <div>
       <Header />
       <Content />
+      <Footer />
     </div>
   );
 };
